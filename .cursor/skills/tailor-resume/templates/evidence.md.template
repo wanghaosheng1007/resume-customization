@@ -1,0 +1,27 @@
+# Evidence — {output_slug}
+
+Generated for: **{company}** — {target_role}  
+Date: {generated_at}
+
+Every resume bullet below maps to a source file under `sources/`.
+
+---
+
+## {evidence_id} — {experience_id} / {bullet_id}
+
+**Resume bullet:** {full bullet text from resume.json}
+
+**Source:** `{path under sources/}`
+
+**Excerpt:**
+> {verbatim quote from source, max 2 sentences}
+
+**Skill points demonstrated:** {skill1}, {skill2}, ...
+
+**JD requirements addressed:** {must_have: ...; nice_to_have: ...; keyword: ...}
+
+**Confidence:** high | medium
+
+---
+
+<!-- Repeat one section per bullet -->

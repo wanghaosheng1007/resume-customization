@@ -1,0 +1,64 @@
+---
+description: Output format for resume.json, resume.md, and evidence.md under output/
+globs: output/**/*
+alwaysApply: false
+---
+
+# Output schema and files
+
+Each JD run writes to `output/{slug}/` where `{slug}` is lowercase kebab-case (e.g. `acme-senior-backend`).
+
+## Required artifacts
+
+| File | Role |
+|------|------|
+| `resume.json` | Canonical structured resume; must validate against schema |
+| `resume.md` | One-page English resume for humans (no evidence blocks) |
+| `evidence.md` | Proof-of-evidence for every bullet |
+
+## JSON schema
+
+Follow @.cursor/skills/tailor-resume/schema/resume.schema.json
+
+Key rules:
+
+- `meta.language` is always `"en"`.
+- `meta.generated_at` is ISO 8601 date (YYYY-MM-DD).
+- Every bullet has unique `id`, `evidence_id`, `skill_points[]`, `jd_tags[]`.
+- `gaps[]` lists unmet JD requirements; `status` is `missing` or `partial`.
+
+## evidence.md section template
+
+Use exactly this structure per evidence entry:
+
+```markdown
+## {evidence_id} — {experience_id} / {bullet_id}
+
+**Resume bullet:** {full bullet text}
+
+**Source:** `sources/...`
+
+**Excerpt:**
+> {verbatim excerpt}
+
+**Skill points demonstrated:** {comma-separated}
+
+**JD requirements addressed:** {must_have / nice_to_have / keyword references}
+
+**Confidence:** high | medium
+```
+
+## resume.md structure
+
+1. Name and contact (from `sources/profile.md` Facts)
+2. **Summary** (2–3 sentences)
+3. **Skills** (grouped: core, tools, domains)
+4. **Experience** (reverse chronological; company, title, dates, location, bullets)
+5. **Education** (brief)
+6. Optional **Projects** only if JD-relevant and documented
+
+Keep to ~1 page unless user requests otherwise.
+
+## Templates
+
+See @.cursor/skills/tailor-resume/templates/resume.md.template and @.cursor/skills/tailor-resume/templates/evidence.md.template

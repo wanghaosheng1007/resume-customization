@@ -1,0 +1,44 @@
+# {Full Name}
+
+{City, State} | {email} | {phone} | {LinkedIn} | {GitHub}
+
+## Summary
+
+{2-3 sentences from resume.json summary}
+
+## Skills
+
+**Core:** {comma-separated core skills}
+
+**Tools:** {comma-separated tools}
+
+**Domains:** {comma-separated domains}
+
+## Experience
+
+### {Title} — {Company}
+
+*{Start} – {End} | {Location}*
+
+- {bullet 1}
+- {bullet 2}
+- {bullet 3}
+
+### {Next role...}
+
+## Education
+
+### {Degree} — {Institution}
+
+*{End date}*
+
+- {detail 1}
+- {detail 2}
+
+## Projects (optional)
+
+### {Project name}
+
+*{Period}*
+
+- {bullet}

@@ -1,0 +1,10 @@
+# Generated resumes (may contain tailored content per JD)
+output/
+
+# Personal source materials (keep local; commit only if using a private repo)
+sources/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp

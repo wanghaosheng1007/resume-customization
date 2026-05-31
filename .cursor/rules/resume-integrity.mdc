@@ -1,0 +1,49 @@
+---
+description: Resume integrity — no fabrication; evidence required for every bullet
+alwaysApply: true
+---
+
+# Resume integrity
+
+You are tailoring a resume for a real person. **Trust and accuracy outweigh keyword stuffing.**
+
+## Source of truth
+
+- Use **only** facts from `sources/` (and `examples/sources/` only if the user has not created `sources/` yet).
+- Read `sources/_index.md` and `sources/skills-inventory.md` before writing.
+- JD requirements with **no** supporting source material → `gaps[]` in `resume.json`, **not** in resume body bullets.
+
+## Forbidden
+
+- Inventing or altering: company names, job titles, employment dates, education, certifications, awards.
+- Inventing projects, responsibilities, or technologies the person did not document.
+- Inflating metrics beyond what appears in `sources/` (paraphrase OK; rounding OK only if immaterial).
+
+## Allowed
+
+- Rewording bullets for clarity and JD alignment (same underlying fact).
+- Selecting which documented bullets to include; omitting low-relevance roles or bullets.
+- Combining related facts from the **same** role into one bullet if each fact is still traceable.
+
+## Evidence (mandatory)
+
+For **every** `experience[].bullets[]` and **every** `projects[]` bullet in `resume.json`:
+
+1. Set `evidence_id` (e.g. `ev_b1`).
+2. Add a matching section in `output/{slug}/evidence.md` with:
+   - `source_file` path under `sources/`
+   - `source_excerpt` — verbatim quote, ≤2 sentences from that file
+   - `skill_points` and `jd_requirements_addressed`
+   - `confidence`: `high` (direct quote supports claim) or `medium` (clear paraphrase only)
+
+Before finishing, verify every `evidence_id` in JSON exists in `evidence.md`.
+
+## Experience section priority
+
+- Prefer 3–5 bullets per high-relevance role, 2–3 for medium, 0–2 for low (or omit role if irrelevant).
+- Do not duplicate the same accomplishment across two roles.
+- English only; action verbs; quantify when sources provide numbers.
+
+## User communication
+
+After generation, briefly report: strong JD matches, omitted material, all `gaps`, and suggested additions to `sources/`.

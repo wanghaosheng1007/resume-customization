@@ -1,0 +1,47 @@
+---
+description: How to read and maintain experience source files under sources/
+globs: sources/**,examples/sources/**
+alwaysApply: false
+---
+
+# Source file layout
+
+## Directory roles
+
+| Path | Purpose |
+|------|---------|
+| `sources/profile.md` | Contact info and one-line positioning (Facts section) |
+| `sources/_index.md` | Human-maintained index of all source files |
+| `sources/skills-inventory.md` | Skills + pointers to proof files |
+| `sources/experience/*.md` | One file per job; primary input for tailoring |
+| `sources/projects/*.md` | Projects (employment or side) |
+| `sources/education/*.md` | Degrees and academic facts |
+
+## Required sections per experience file
+
+Each `sources/experience/YYYY-MM_company_role.md` must include:
+
+1. **Facts** — immutable: company, title, location, dates, team context.
+2. **Tools** — technologies actually used.
+3. **Metrics** — numbers only if true (latency, scale, %, counts).
+4. **Raw bullets** — verbatim notes; agent may rewrite for resume but not contradict.
+
+## Filename convention
+
+`YYYY-MM_company_slug_role-slug.md` (start date of role).
+
+## Reading order for tailor workflow
+
+1. `sources/_index.md`
+2. `sources/profile.md`, `sources/skills-inventory.md`
+3. All `sources/experience/*.md` (sort by date descending)
+4. `sources/projects/*.md`, `sources/education/*.md` as needed for JD
+
+## Formats
+
+- Prefer Markdown. Plain `.txt` is acceptable.
+- Do not parse binary PDFs in v1; ask user to paste excerpts into `.md` if needed.
+
+## When facts conflict
+
+Prefer **Facts** section over **Raw bullets**. Flag conflict to user; do not guess.
