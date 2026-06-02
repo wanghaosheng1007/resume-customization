@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "target_role": "Senior Backend Engineer",
+    "company": "Acme Corp",
+    "generated_at": "2026-05-31",
+    "language": "en",
+    "output_slug": "test-vscode-run"
+  },
+  "jd_analysis": {
+    "must_have": [
+      "5+ years backend development",
+      "Python or Go in production",
+      "Message queues / streaming (Kafka, Kinesis, etc.)",
+      "SQL databases (PostgreSQL) and query performance tuning",
+      "Cloud experience (AWS or GCP)",
+      "Distributed systems and API design"
+    ],
+    "nice_to_have": [
+      "Kubernetes in production",
+      "Terraform / IaC",
+      "Payment or fintech domain",
+      "OpenTelemetry or distributed tracing"
+    ],
+    "keywords": [
+      "Python", "Go", "Kafka", "PostgreSQL", "AWS", "microservices",
+      "FastAPI", "system design", "mentoring", "on-call", "SLOs", "observability"
+    ],
+    "responsibilities": [
+      "Design and implement scalable backend services in Python or Go",
+      "Own event-driven pipelines and improve reliability",
+      "Reduce latency and operational burden through observability and SLOs",
+      "Mentor engineers and lead technical design reviews",
+      "Collaborate with SRE on incident response and capacity planning"
+    ]
+  },
+  "summary": "Backend engineer with 8 years of experience building distributed APIs and event-driven pipelines in Python and Go. At Nimbus Analytics, scaled Kafka ingestion from 2M to 8M events/day and introduced OpenTelemetry-based observability that cut monthly incidents by 67%. Previously delivered Go microservices in the fintech domain at Orbit Payments.",
+  "skills": {
+    "core": ["Python", "Go", "distributed systems", "API design", "system design", "event-driven architecture"],
+    "tools": ["FastAPI", "Apache Kafka", "PostgreSQL", "AWS (ECS, S3, RDS, CloudWatch)", "Redis", "Terraform", "Docker", "OpenTelemetry", "Kubernetes (GKE)", "Prometheus", "GitHub Actions"],
+    "domains": ["backend engineering", "data ingestion pipelines", "payment / fintech", "observability & SLOs", "platform infrastructure"]
+  },
+  "experience": [
+    {
+      "id": "exp_2021_nimbus",
+      "company": "Nimbus Analytics, Inc.",
+      "title": "Senior Backend Engineer",
+      "location": "San Francisco, CA (remote hybrid)",
+      "start": "2021-03",
+      "end": "present",
+      "relevance": "high",
+      "bullets": [
+        {
+          "id": "b1",
+          "text": "Designed and launched Kafka-based event ingestion service replacing cron polling, scaling throughput from 2M to 8M events/day; coordinated schema contracts with data science.",
+          "evidence_id": "ev_nimbus_b1",
+          "skill_points": ["Apache Kafka", "event-driven systems", "system design"],
+          "jd_tags": ["must_have:message queues / streaming", "must_have:distributed systems and API design", "keyword:Kafka"]
+        },
+        {
+          "id": "b2",
+          "text": "Led migration of monolithic REST module to FastAPI microservice behind ALB, reducing p95 latency from 420ms to 180ms; authored runbooks and mentored two mid-level engineers through rollout.",
+          "evidence_id": "ev_nimbus_b2",
+          "skill_points": ["Python", "FastAPI", "microservices", "mentoring", "API design"],
+          "jd_tags": ["must_have:Python or Go in production", "must_have:distributed systems and API design", "keyword:FastAPI", "keyword:microservices", "keyword:mentoring"]
+        },
+        {
+          "id": "b3",
+          "text": "Introduced OpenTelemetry distributed tracing and SLO dashboards; partnered with SRE on error budgets, reducing on-call incidents from 12 to 4 per month.",
+          "evidence_id": "ev_nimbus_b3",
+          "skill_points": ["observability", "SLOs", "OpenTelemetry", "SRE collaboration"],
+          "jd_tags": ["nice_to_have:OpenTelemetry or distributed tracing", "keyword:SLOs", "keyword:observability", "keyword:on-call"]
+        },
+        {
+          "id": "b4",
+          "text": "Optimized high-traffic PostgreSQL queries through indexing and connection pooling; published team query review checklist adopted across the platform.",
+          "evidence_id": "ev_nimbus_b4",
+          "skill_points": ["PostgreSQL", "query performance tuning", "database optimization"],
+          "jd_tags": ["must_have:SQL databases (PostgreSQL) and query performance tuning", "keyword:PostgreSQL"]
+        }
+      ]
+    },
+    {
+      "id": "exp_2018_orbit",
+      "company": "Orbit Payments",
+      "title": "Software Engineer II",
+      "location": "Austin, TX",
+      "start": "2018-06",
+      "end": "2021-02",
+      "relevance": "high",
+      "bullets": [
+        {
+          "id": "b1",
+          "text": "Built and maintained Go microservices for merchant onboarding and settlement webhooks, improving webhook delivery success rate from 94% to 99.2%.",
+          "evidence_id": "ev_orbit_b1",
+          "skill_points": ["Go", "microservices", "API design"],
+          "jd_tags": ["must_have:Python or Go in production", "must_have:distributed systems and API design", "keyword:Go", "keyword:microservices"]
+        },
+        {
+          "id": "b2",
+          "text": "Designed idempotent webhook retry logic with exponential backoff and dead-letter queue, hardening reliability for high-value payment flows.",
+          "evidence_id": "ev_orbit_b2",
+          "skill_points": ["distributed systems", "reliability engineering", "system design"],
+          "jd_tags": ["must_have:distributed systems and API design", "keyword:system design"]
+        },
+        {
+          "id": "b3",
+          "text": "Maintained on-call rotation; root-caused and authored postmortem for production Redis failover; collaborated with security on OAuth2 client credentials flow for partner integrations.",
+          "evidence_id": "ev_orbit_b3",
+          "skill_points": ["incident response", "on-call", "API security"],
+          "jd_tags": ["keyword:on-call", "responsibility:collaborate with SRE on incident response"]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu_2018_stateuniv",
+      "institution": "State University",
+      "degree": "Bachelor of Science, Computer Science",
+      "end": "2018-05",
+      "details": ["GPA 3.6 / 4.0", "Dean's List (4 semesters)"]
+    }
+  ],
+  "projects": [],
+  "gaps": [
+    {
+      "requirement": "Kubernetes in production",
+      "status": "partial",
+      "note": "Used Kubernetes (GKE) at Orbit Payments; skills-inventory flags level as 'Familiar' — not claimed as primary skill without source update."
+    },
+    {
+      "requirement": "Terraform / IaC",
+      "status": "partial",
+      "note": "Terraform listed in Nimbus tools section but no dedicated bullet documents depth; would strengthen profile if a specific IaC bullet were added to sources."
+    }
+  ]
+}

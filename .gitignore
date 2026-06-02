@@ -1,8 +1,8 @@
 # Generated resumes (may contain tailored content per JD)
-output/
+# output/
 
 # Personal source materials (keep local; commit only if using a private repo)
-sources/
+# sources/
 
 # OS / editor
 .DS_Store

@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "target_role": "Mid-Market Customer Success Manager",
+    "company": "Courted",
+    "generated_at": "2026-05-31",
+    "language": "en",
+    "output_slug": "courted-mid-market-csm"
+  },
+  "jd_analysis": {
+    "must_have": [
+      "4-6 years customer-facing SaaS experience",
+      "2+ years owning a named book of 50-150 customers end-to-end",
+      "Proven track record running renewals and hitting retention/NRR targets",
+      "Experience structuring and selling multi-year contracts and expansion deals",
+      "Strong executive presence for Business Reviews with brokerage owners/presidents",
+      "Excellent written and verbal communication; ROI case development",
+      "Deep instincts for difficult customer conversations (saves, renewals, negotiations, de-escalations)",
+      "Strong account planning skills with quarterly cadence",
+      "Multi-stakeholder relationship navigation (ops, managers, leadership)",
+      "Ability to speak fluently about a technical product (APIs, predictive analytics, ML)",
+      "Proficiency in Excel/Sheets and PowerPoint/Slides; ROI modeling",
+      "Ownership mindset and autonomy in fast-paced startup"
+    ],
+    "nice_to_have": [
+      "Previous experience in residential real estate software/proptech",
+      "Previous startup experience"
+    ],
+    "keywords": [
+      "customer success", "SaaS", "renewals", "NRR", "retention", "expansion",
+      "Business Review", "account planning", "multi-year contracts", "ARR",
+      "brokerage", "proptech", "ROI", "book of business", "adoption"
+    ],
+    "responsibilities": [
+      "Own 75-150 named customer relationships from post-sale through renewal and expansion",
+      "Run monthly 1:1 cadence and deliver semi-annual Business Reviews to brokerage leadership",
+      "Build and maintain Success Plans for top 30 accounts",
+      "Own renewal cycle kicking off at -120 days; deliver ROI summaries, negotiate multi-year contracts",
+      "Drive office-by-office adoption across multi-location brokerages",
+      "Identify and execute expansion opportunities quarterly",
+      "Build and refresh account plans quarterly; forecast expansion accurately",
+      "Be the voice of customers internally for product roadmap",
+      "Contribute to shared CS programs (references, case studies, playbooks)"
+    ]
+  },
+  "summary": "Backend engineer with 8 years building production APIs and data pipelines in Python and Go. Deep technical fluency in APIs, event-driven systems, and ML-adjacent tooling that supports speaking credibly about a technical product. Note: sources/ documents engineering roles only — customer-facing SaaS experience required for this role is not yet reflected in source materials.",
+  "skills": {
+    "core": ["Python", "Go", "distributed systems", "API design", "technical communication"],
+    "tools": ["FastAPI", "Apache Kafka", "PostgreSQL", "AWS (ECS, S3, RDS)", "OpenTelemetry"],
+    "domains": ["backend engineering", "data ingestion", "event-driven systems", "payment/fintech"]
+  },
+  "experience": [
+    {
+      "id": "exp_2021_nimbus",
+      "company": "Nimbus Analytics, Inc.",
+      "title": "Senior Backend Engineer",
+      "location": "San Francisco, CA (remote hybrid)",
+      "start": "2021-03",
+      "end": "present",
+      "relevance": "low",
+      "bullets": [
+        {
+          "id": "b1",
+          "text": "Mentored mid-level engineers and led backend design reviews across cross-functional teams, translating technical API and system design concepts to non-specialist stakeholders.",
+          "evidence_id": "ev_nimbus_b1",
+          "skill_points": ["technical communication", "mentoring", "cross-functional collaboration"],
+          "jd_tags": ["must_have:ability to speak fluently about a technical product"]
+        }
+      ]
+    },
+    {
+      "id": "exp_2018_orbit",
+      "company": "Orbit Payments",
+      "title": "Software Engineer II",
+      "location": "Austin, TX",
+      "start": "2018-06",
+      "end": "2021-02",
+      "relevance": "low",
+      "bullets": [
+        {
+          "id": "b1",
+          "text": "Collaborated with security and partner-facing teams on OAuth2 integrations for external partners; authored production postmortem communicating incident root cause and remediation plan to stakeholders.",
+          "evidence_id": "ev_orbit_b1",
+          "skill_points": ["stakeholder communication", "written communication", "cross-functional work"],
+          "jd_tags": ["must_have:excellent written and verbal communication"]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu_2018_stateuniv",
+      "institution": "State University",
+      "degree": "Bachelor of Science, Computer Science",
+      "end": "2018-05",
+      "details": ["GPA 3.6 / 4.0", "Dean's List (4 semesters)"]
+    }
+  ],
+  "projects": [],
+  "gaps": [
+    {
+      "requirement": "4-6 years customer-facing SaaS experience",
+      "status": "missing",
+      "note": "All experience in sources/ is engineering. No customer-facing roles documented. This is the primary structural gap."
+    },
+    {
+      "requirement": "2+ years owning a named book of 50-150 customers end-to-end",
+      "status": "missing",
+      "note": "No account ownership or customer management documented in any source file."
+    },
+    {
+      "requirement": "Proven track record running renewals and hitting retention/NRR targets",
+      "status": "missing",
+      "note": "No renewal cycle, churn prevention, or revenue retention metrics in sources/."
+    },
+    {
+      "requirement": "Experience structuring and selling multi-year contracts and expansion deals",
+      "status": "missing",
+      "note": "No commercial, contract negotiation, or expansion experience documented."
+    },
+    {
+      "requirement": "Strong executive presence for Business Reviews with brokerage owners/presidents",
+      "status": "missing",
+      "note": "Sources show internal engineering collaboration only; no external executive stakeholder engagement documented."
+    },
+    {
+      "requirement": "ROI case development and delivery (in-person and written)",
+      "status": "missing",
+      "note": "No ROI modeling, business case development, or value demonstration experience in sources/."
+    },
+    {
+      "requirement": "Difficult customer conversations (saves, renewals, negotiations, de-escalations)",
+      "status": "missing",
+      "note": "No customer-facing conflict resolution or negotiation experience documented."
+    },
+    {
+      "requirement": "Account planning skills with quarterly cadence",
+      "status": "missing",
+      "note": "No account planning or book-of-business management in sources/."
+    },
+    {
+      "requirement": "Excel/Sheets and PowerPoint/Slides proficiency; ROI modeling",
+      "status": "missing",
+      "note": "Not documented in any source file; sources focus on engineering tooling."
+    },
+    {
+      "requirement": "Previous experience in residential real estate/proptech (nice to have)",
+      "status": "missing",
+      "note": "No real estate or proptech domain experience in sources/."
+    },
+    {
+      "requirement": "Previous startup experience (nice to have)",
+      "status": "partial",
+      "note": "Orbit Payments appears to be a smaller company but startup context is not explicitly stated in sources/."
+    }
+  ]
+}
